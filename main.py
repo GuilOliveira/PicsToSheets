@@ -52,7 +52,7 @@ def array_to_sheet(array, actual, maximum, name):
                 ws.column_dimensions[get_column_letter(c)].width = columnWidth
         ws.row_dimensions[r].height = rowHeight
         counter = False
-        print(str(actual) + " of " + str(maximum) + " // " + str(get_percent(r, len(array))) + "%")
+        print(str(actual) + " of " + str(maximum) + " // " + str(get_percent(r, len(array))) + " %")
     wb.save("Sheets/" + str(name.split(".")[0]) + ".xlsx")
 
 
